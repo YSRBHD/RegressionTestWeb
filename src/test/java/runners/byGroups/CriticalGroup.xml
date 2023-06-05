@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="Run Suites by Tag">
+		<groups>
+			<run>
+				<include name="Login" />
+				<exclude name="Skip" />
+			</run>
+		</groups>
+		<classes>
+			<class name="testSuites.LoginSuite" />
+		</classes>
+	</test>
+</suite>
